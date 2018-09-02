@@ -1,0 +1,102 @@
+﻿body {
+    background-color: white;
+}
+.content {
+    border: 2px solid black;
+    padding: 0;
+    margin: 10px;
+    display: inline-block;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 50px;
+}
+
+.rowNum {
+    display: inline-block;
+    width: 10px;
+}
+.rowNum > div {
+    height: 30px;
+    padding: 10px
+}
+
+.columnNum {
+    display: block;
+    height: 20px;
+    margin-left: 50px;
+}
+.columnNum > div {
+    display: table-cell;
+    width: 50px;
+    height: 15px;
+}
+
+.lattice {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.row:nth-child(odd) > .lattice:nth-child(even), .row:nth-child(even) > .lattice:nth-child(odd) {
+    background-color: #aaa;
+}
+
+.hoverable:hover {
+    background-color: bisque !important;
+    cursor: pointer;
+}
+
+.canMoveTo {
+    background-color: #1e90ff !important;
+}
+
+.chessman {
+    border: 1px black solid;
+    height: 26px;
+    font-size: 26px;
+    width: 26px;
+    margin: 10px;
+    padding: 2px;
+    display: table-caption;
+}
+
+.whiteChessman {
+    background-color: white;
+    color: black;
+}
+
+.blackChessman {
+    background-color: black;
+    color: white;
+}
+
+.pawn:before {
+    content: "兵"
+}
+
+.rook:before {
+    content: "车"
+}
+
+.king:before {
+    content: "王"
+}
+
+.queen:before {
+    content: "后"
+}
+
+.knight:before {
+    content: "马"
+}
+
+.bishop:before {
+    content: "象"
+}
