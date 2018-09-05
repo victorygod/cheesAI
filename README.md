@@ -1,3 +1,3 @@
-# cheesAI
+# chessAI
 
 This is a chess AI implemented on Node.js
